@@ -16,6 +16,7 @@ module JsonapiSwaggerHelpers
       route ||= rails_route(path, 'POST')
       route ||= rails_route(path, 'PUT')
       route ||= rails_route(path, 'DELETE')
+      route ||= rails_route("#{path}/1", 'GET')
       route ||= rails_route("#{path}/1", 'PUT')
       route ||= rails_route("#{path}/1", 'DELETE')
       route
