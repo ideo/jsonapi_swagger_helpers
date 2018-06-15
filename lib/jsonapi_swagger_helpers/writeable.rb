@@ -46,7 +46,9 @@ module JsonapiSwaggerHelpers
     end
 
     def all_tags
-      tags + payload_tags
+      # There was no way to get rid of payload_tags, so overriding this method
+      # tags + payload_tags
+      tags
     end
 
     def payload_tags
